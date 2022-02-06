@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Soteria</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="website-nav">
+            <a href="/index.html">
+                <li>Home</li>
+            </a>
+            <a href="/pages/partners.html">
+                <li>Protection Partners</li>
+            </a>
+            <a href="/pages/contact.html">
+                <li>Contact Us</li>
+            </a>
+            <a href="/pages/forum.html">
+                <li>Forum</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Register for Soteria</h1>
+        <p>
+            Registering for Soteria allows you to sign up to be a protectee and assist other women in need. You will
+            only have access to the Forum and will receive emergency alerts at the phone number you provide. You can
+            download our app from the Google Play Store or Apple Store and sign in with these same credentials to access
+            all the features of Soteria
+        </p>
+    </div>
+
+    <div class="container centered-content">
+        <h3>Already have an account? Login instead!</h3>
+        <a href="/pages/login.html"><button>Login</button></a>
+    </div>
+
+    <div class="container">
+        <h1>What you'll need</h1>
+        <ul>
+            <li>
+                <strong>Personal Information: </strong>Your name, date of birth, gender.
+            </li>
+            <li>
+                <strong>Email Address: </strong>To contact you in case of updates and emergencies.
+            </li>
+            <li>
+                <strong>Phone Number: </strong>Your phone number will be used to send you emergency alerts.
+            </li>
+            <li>
+                <strong>Address: </strong>Your address will be used to check if you are within range of someone in
+                trouble.
+            </li>
+            <li>
+                <strong>Valid ID with a Picture: </strong>This will be used to verify your account.
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form id="registration-form">
+            <fieldset>
+                <legend>Sign up with Soteria</legend>
+                <input type="text" placeholder="First Name *" name="firstName" id="firstName" required>
+                <input type="text" placeholder="Last Name *" name"lastName" id="lastName" required>
+                <input type="email" placeholder="Email Address *" name="emailAddress" id="email" required>
+                <input type="text" minlength="10" maxlength="10" name="phoneNumber" placeholder="Phone Number *"
+                    value="" required>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday" required>
+
+                <div id="gender-select">
+                    <label for="gender">Gender:</label>
+                    <input id="male" type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input id="female" type="radio" name="gender" value="female" checked>
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="governmentID">Upload Government ID</label>
+                <input type="file" id="governmentID" name="governmentID" required>
+
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
